@@ -142,8 +142,7 @@ returns a string, saying how many elements of the list are strictly
 greated than the given number and strictly lower.
 
 >>> lowerAndGreater 3 [1 .. 9]
-"3 is greater than 2 elements and lower than 6 elements
- 3 is greater than 2 elements and lower than 6 elements"
+"3 is greater than 2 elements and lower than 6 elements"
 
 Explanation: the list [1 .. 9] contains 9 elements: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 The given number 3 is greater than 2 elements (1 and 2)
