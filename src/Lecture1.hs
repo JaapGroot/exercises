@@ -114,9 +114,7 @@ string.
 subString :: Int -> Int -> String -> String
 subString start end str = 
     let 
-        begin 
-            | start < 0  = 0
-            | otherwise  = start
+        begin = max 0 start
             in
     take (end - begin + 1) (drop begin str) -- Add one to end of string, because array starts with 0. 
 
