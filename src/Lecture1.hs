@@ -129,12 +129,7 @@ and finds a sum of the numbers inside this string.
 The string contains only spaces and/or numbers.
 -}
 strSum :: String -> Int
-strSum str = 
-  sum (map convertStrToInt (words str))
-  where 
-    convertStrToInt :: String -> Int 
-    convertStrToInt x =
-        read x :: Int
+strSum str = sum (map read (words str))
 
 
 {- | Write a function that takes a number and a list of numbers and
